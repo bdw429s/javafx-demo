@@ -9,7 +9,7 @@
     "shortDescription":"Demo of JavaFX bundled in CommandBox",
     "slug":"javafx-demo",
     "type":"commandbox-modules",
-    "version":"1.0.3",
+    "version":"1.0.4",
     "scripts":{
         "onRelease":"publish",
         "postPublish":"!git push --follow-tags"
