@@ -79,14 +79,14 @@ component {
 		var args = [
 			JDKPath,
 			'--module-path',
-			directoryList( expandPath( '/javafx-demo/lib-modules' ), false, 'array', '*.jar' )
+			'"' & directoryList( expandPath( '/javafx-demo/lib-modules' ), false, 'array', '*.jar' )
 				.append( getJavaFXJars(), true )
-				.toList( server.system.properties[ 'path.separator' ] ),
+				.toList( server.system.properties[ 'path.separator' ] ) & '"',
 			'--add-modules',
 			'org.jfree.fx.demos',
 			'-classpath',
-			directoryList( expandPath( '/javafx-demo/lib' ), false, 'array', '*.jar' )
-				.toList( server.system.properties[ 'path.separator' ] ),
+			'"' & directoryList( expandPath( '/javafx-demo/lib' ), false, 'array', '*.jar' )
+				.toList( server.system.properties[ 'path.separator' ] ) & '"',
 			'--module',
 			'org.jfree.fx.demos/org.jfree.chart3d.fx.demo.OrsonChartsFXDemo'
 		];
