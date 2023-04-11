@@ -77,7 +77,7 @@ component {
 			JDKPath &= '.exe'
 		}
 		var args = [
-			JDKPath,
+			'"' & JDKPath & '"',
 			'--module-path',
 			'"' & directoryList( expandPath( '/javafx-demo/lib-modules' ), false, 'array', '*.jar' )
 				.append( getJavaFXJars(), true )
