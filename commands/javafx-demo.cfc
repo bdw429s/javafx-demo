@@ -63,8 +63,9 @@ component {
 			command( 'install' )
 				.params(
 					ID : 'https://download2.gluonhq.com/openjfx/#javaFXSDKVersion#/openjfx-#javaFXSDKVersion#_#os#-#arch#_bin-sdk.zip',
-					directory : 'JavaFX',
-					verbose : verbose
+					directory : expandPath( '/javafx-demo/JavaFX' ),
+					verbose : verbose,
+					save : false
 				)
 				.run();
 		}
