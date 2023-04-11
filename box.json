@@ -1,0 +1,19 @@
+{
+    "author":"Brad Wood",
+    "dependencies":{
+        "openjfx-17.0.6_windows-x64_bin-sdk":"https://download2.gluonhq.com/openjfx/17.0.6/openjfx-17.0.6_windows-x64_bin-sdk.zip"
+    },
+    "installPaths":{
+        "openjfx-17.0.6_windows-x64_bin-sdk":"JavaFX/openjfx-17.0.6_windows-x64_bin-sdk/"
+    },
+    "location":"ForgeboxStorage",
+    "name":"JavaFX Demo",
+    "repository":{
+        "type":"Git",
+        "URL":""
+    },
+    "shortDescription":"Demo of JavaFX bundled in CommandBox",
+    "slug":"javafx-demo",
+    "type":"commandbox-modules",
+    "version":"0.0.0"
+}
